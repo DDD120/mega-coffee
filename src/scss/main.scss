@@ -50,7 +50,9 @@ header {
       &:hover {
         .item {
           .contents {
-            display: block;
+            pointer-events: all;
+            height: 300px;
+            visibility: visible;
           }
         }
       }
@@ -68,12 +70,16 @@ header {
           display: block;
           font-size: 14px;
           padding: 10px 20px 34px 20px;
+          transition: 0.3s;
         }
         .contents {
           position: absolute;
           background-color: $base-color;
-          height: 300px;
-          display: none;
+          height: 0;
+          visibility: hidden;
+          transition: all 0.3s;
+          pointer-events: none;
+          overflow: hidden;
           li {
             text-align: center;
             padding: 8px 20px;
@@ -81,6 +87,7 @@ header {
             font-size: 13px;
             a {
               color: $white;
+              transition: 0.3s;
               &:hover {
                 color: $yellow;
               }
