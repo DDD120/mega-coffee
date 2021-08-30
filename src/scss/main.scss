@@ -1,3 +1,120 @@
+/* COMMON */
+$base-color: #171506;
+$white: #fff;
+$yellow: #fad000;
+
 body {
+  box-sizing: border-box;
+  color: $base-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
   font-family: "Noto Sans KR", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: $base-color;
+  text-decoration: none;
+}
+
+.inner {
+  position: relative;
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* HEADER */
+header {
+  background-color: $base-color;
+  .inner {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: rgba(250, 235, 215, 0.212);
+    .logo {
+      height: 80px;
+      img {
+        width: 280px;
+      }
+    }
+    .main-menu {
+      display: flex;
+      align-self: flex-end;
+      position: relative;
+      &:hover {
+        .item {
+          .contents {
+            display: block;
+          }
+        }
+      }
+      .item {
+        color: $white;
+        &:hover {
+          .name {
+            color: $yellow;
+          }
+        }
+        .name {
+          width: 100px;
+          text-align: center;
+          color: $white;
+          display: block;
+          font-size: 14px;
+          padding: 10px 20px 34px 20px;
+        }
+        .contents {
+          position: absolute;
+          background-color: $base-color;
+          height: 300px;
+          display: none;
+          li {
+            text-align: center;
+            padding: 8px 20px;
+            width: 100px;
+            font-size: 13px;
+            a {
+              color: $white;
+              &:hover {
+                color: $yellow;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sub-menu {
+      .login {
+        font-size: 12px;
+        color: $yellow;
+        border: 1px solid $yellow;
+        padding: 4px 6px;
+      }
+      .social {
+        display: flex;
+        font-size: 30px;
+        .fab {
+          margin: 3px;
+          &:hover {
+            filter: brightness(0.8);
+          }
+        }
+        .fa-blogger {
+          color: #09b83e;
+        }
+        .fa-facebook-square {
+          color: #1877f2;
+        }
+        .fa-instagram {
+          color: #e4405f;
+        }
+      }
+    }
+  }
 }
