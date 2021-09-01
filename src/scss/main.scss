@@ -73,6 +73,7 @@ header {
           transition: 0.3s;
         }
         .contents {
+          z-index: 2;
           position: absolute;
           background-color: $base-color;
           height: 0;
@@ -123,5 +124,35 @@ header {
         }
       }
     }
+  }
+}
+
+/* PROMOTION */
+.promotion {
+  background-color: #000;
+  .swiper {
+    height: 480px;
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $yellow;
+  }
+  .swiper-button-prev {
+    margin-left: 100px;
+  }
+  .swiper-button-next {
+    margin-right: 100px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $yellow;
   }
 }
