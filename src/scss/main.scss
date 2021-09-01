@@ -1,5 +1,6 @@
 /* COMMON */
 $base-color: #171506;
+$black: #000;
 $white: #fff;
 $yellow: #fad000;
 
@@ -129,9 +130,9 @@ header {
 
 /* PROMOTION */
 .promotion {
-  background-color: #000;
+  background-color: $black;
   .swiper {
-    height: 480px;
+    height: 560px;
     .swiper-slide {
       text-align: center;
       display: flex;
@@ -147,12 +148,100 @@ header {
     color: $yellow;
   }
   .swiper-button-prev {
-    margin-left: 100px;
+    margin-left: 30px;
   }
   .swiper-button-next {
-    margin-right: 100px;
+    margin-right: 30px;
   }
   .swiper-pagination-bullet-active {
     background-color: $yellow;
+  }
+}
+
+/* SELECT MENU */
+.select-menu {
+  background-color: $black;
+  padding: 100px;
+  .inner {
+    display: flex;
+    flex-wrap: wrap;
+    .box {
+      position: relative;
+      overflow: hidden;
+      img {
+        transition: 0.3s;
+        width: 240px;
+      }
+      &::after {
+        content: "";
+        width: 240px;
+        height: 0px;
+        background-color: $base-color;
+        position: absolute;
+        bottom: 0;
+        transition: 0.3s;
+        text-align: center;
+        line-height: 40px;
+        color: $white;
+      }
+      &:hover {
+        img {
+          margin-top: -40px;
+        }
+        &::after {
+          height: 40px;
+        }
+      }
+    }
+    .brand {
+      &::after {
+        content: "브랜드 소개";
+      }
+    }
+    .foundation-guide {
+      &::after {
+        content: "창업 안내";
+      }
+    }
+    .interior {
+      &::after {
+        content: "인테리어";
+      }
+    }
+    .startegy {
+      &::after {
+        content: "전략";
+      }
+    }
+    .store {
+      &::after {
+        content: "매장 찾기";
+      }
+    }
+    .menu {
+      &::after {
+        content: "메뉴";
+      }
+    }
+    .mega-event {
+      &::after {
+        content: "메가 이벤트";
+      }
+    }
+    .blog {
+      &::after {
+        content: "블로그";
+      }
+    }
+    .facebook {
+      &::after {
+        content: "페이스북";
+      }
+    }
+    .inquiry {
+      &::after {
+        content: "창업 문의";
+      }
+    }
   }
 }
