@@ -13,3 +13,16 @@ new Swiper(".promotion .swiper", {
     prevEl: ".promotion .swiper-button-prev",
   },
 });
+
+import { CountUp } from "countup.js";
+
+// LINE BANNER
+const countUp = new CountUp("line-banner-num", 5390, {
+  separator: "",
+  useEasing: true,
+});
+if (!countUp.error) {
+  countUp.start();
+} else {
+  console.error(countUp.error);
+}

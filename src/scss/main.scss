@@ -140,6 +140,7 @@ header {
       align-items: center;
       img {
         width: 100%;
+        pointer-events: none;
       }
     }
   }
@@ -241,6 +242,56 @@ header {
     .inquiry {
       &::after {
         content: "창업 문의";
+      }
+    }
+  }
+}
+
+/* LINE BANNER*/
+.line-banner {
+  background-color: $white;
+  .inner {
+    padding: 40px;
+    .banner-container {
+      display: flex;
+      justify-content: center;
+      img {
+        margin-right: 50px;
+        pointer-events: none;
+      }
+      .text {
+        position: relative;
+        text-align: center;
+        letter-spacing: -3px;
+        width: 600px;
+        p {
+          font-weight: 700;
+          font-size: 36px;
+          position: absolute;
+          top: 36px;
+          left: 70px;
+        }
+        h1 {
+          font-weight: 700;
+          font-size: 50px;
+          color: $yellow;
+          line-height: 1;
+          position: absolute;
+          top: 64px;
+          left: 20px;
+          span {
+            font-size: 160px;
+            letter-spacing: -6px;
+          }
+          &::after {
+            content: "";
+            width: 90px;
+            height: 140px;
+            background: url(/images/line-banner-logo.png) no-repeat;
+            background-size: contain;
+            display: inline-block;
+          }
+        }
       }
     }
   }
