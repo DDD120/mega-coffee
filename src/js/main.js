@@ -14,9 +14,9 @@ new Swiper(".promotion .swiper", {
   },
 });
 
+// LINE BANNER
 import { CountUp } from "countup.js";
 
-// LINE BANNER
 const countUp = new CountUp("line-banner-num", 5390, {
   separator: "",
   useEasing: true,
