@@ -552,3 +552,47 @@ header {
     }
   }
 }
+
+/* INTERIOR */
+.interior {
+  background-color: $base-color;
+  .inner {
+    padding: 120px 0;
+    .box {
+      margin: 0 auto;
+      width: 900px;
+      height: 400px;
+      background-color: #1877f2;
+      background-image: url(../../images/interior.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      .text {
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        background-color: $yellow;
+        text-align: center;
+        transition: all 0.3s;
+        &:hover {
+          margin-top: -20px;
+          margin-left: -20px;
+        }
+        h1 {
+          padding-top: 100px;
+          font-size: 50px;
+        }
+        hr {
+          width: 30%;
+          height: 3px;
+          border: none;
+          background-color: $base-color;
+        }
+        p {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
