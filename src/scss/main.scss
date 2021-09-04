@@ -555,7 +555,7 @@ header {
 
 /* INTERIOR */
 .interior {
-  background-color: $base-color;
+  background-color: $white;
   .inner {
     padding: 120px 0;
     .box {
@@ -576,8 +576,8 @@ header {
         text-align: center;
         transition: all 0.3s;
         &:hover {
-          margin-top: -20px;
-          margin-left: -20px;
+          margin-top: -40px;
+          margin-left: -40px;
         }
         h1 {
           padding-top: 100px;
@@ -593,6 +593,23 @@ header {
           padding: 20px;
         }
       }
+    }
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: $base-color;
+  .inner {
+    padding: 40px 10px;
+    text-align: center;
+    color: $white;
+    img {
+      margin: 0 auto 20px;
+      pointer-events: none;
+    }
+    .copyright {
+      color: #666;
     }
   }
 }

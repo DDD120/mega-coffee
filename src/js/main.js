@@ -26,3 +26,7 @@ if (!countUp.error) {
 } else {
   console.error(countUp.error);
 }
+
+// FOOTER
+const thisYear = document.querySelector(".this-year");
+thisYear.textContent = new Date().getFullYear();
