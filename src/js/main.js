@@ -58,3 +58,11 @@ if (!countUp.error) {
 // FOOTER
 const thisYear = document.querySelector(".this-year");
 thisYear.textContent = new Date().getFullYear();
+
+// NOTICE MODAL
+const noticeModal = document.querySelector(".notice");
+const checkBtn = document.querySelector(".modal .check-btn");
+
+checkBtn.addEventListener("click", () => {
+  noticeModal.classList.add("none");
+});

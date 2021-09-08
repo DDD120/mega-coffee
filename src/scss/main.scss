@@ -644,6 +644,7 @@ footer {
   }
 }
 
+/* SCROLL TOP */
 #to-top {
   width: 42px;
   height: 42px;
@@ -663,5 +664,45 @@ footer {
   opacity: 0;
   &.show {
     opacity: 1;
+  }
+}
+
+// NOTICE MODAL
+.notice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($black, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  .modal {
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    height: 200px;
+    color: $yellow;
+    background-color: $base-color;
+    border-radius: 4px;
+    border: 2px solid $white;
+    p {
+      margin: 50px 0;
+    }
+    button {
+      font-weight: 700;
+      background-color: $yellow;
+      border: 2px solid $yellow;
+      color: $base-color;
+      border-radius: 4px;
+      width: 100px;
+      height: 30px;
+      cursor: pointer;
+    }
+  }
+  &.none {
+    display: none;
   }
 }
