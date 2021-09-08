@@ -26,9 +26,14 @@ new Swiper(".promotion .swiper", {
   },
 });
 
-// LINE BANNER
+// LINE BANNER,  SCROLL TOP
 import { CountUp } from "countup.js";
 import { throttle } from "lodash";
+
+const toTopEl = document.querySelector("#to-top");
+toTopEl.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
 
 const countUp = new CountUp("line-banner-num", 5390, {
   startVal: "1000",
@@ -41,6 +46,9 @@ if (!countUp.error) {
     "scroll",
     throttle(function () {
       if (scrollY > 900) countUp.start();
+      scrollY > 100
+        ? toTopEl.classList.add("show")
+        : toTopEl.classList.remove("show");
     }, 200)
   );
 } else {
