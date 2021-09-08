@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "countup.js": "^2.0.8",
+    "lodash": "^4.17.21",
     "node-sass": "^6.0.1"
   },
   "staticFiles": {
