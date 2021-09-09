@@ -1,74 +1,13 @@
-/* COMMON */
-$base-color: #171506;
-$black: #000;
-$white: #fff;
-$yellow: #fad000;
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-  overflow-x: hidden;
-  box-sizing: border-box;
-  color: $base-color;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.4;
-  font-family: "Noto Sans KR", sans-serif;
-}
-
-img {
-  display: block;
-}
-
-a {
-  color: $base-color;
-  text-decoration: none;
-}
-
-.inner {
-  position: relative;
-  width: 1240px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.back-to-position {
-  opacity: 0;
-  transition: 1s;
-  &.to-right {
-    transform: translateX(-150px);
-  }
-  &.to-left {
-    transform: translateX(150px);
-  }
-  &.to-top {
-    transform: translateY(150px);
-  }
-  &.to-bottom {
-    transform: translateY(-150px);
-  }
-}
-
-.show {
-  .back-to-position {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
+@import "./common.scss";
 
 /* HEADER */
 header {
-  width: 100%;
   background-color: $base-color;
   .inner {
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // background-color: rgba(250, 235, 215, 0.212);
     .logo {
       height: 80px;
       img {
@@ -77,12 +16,13 @@ header {
     }
     .main-menu {
       display: flex;
+      flex-direction: row;
       align-self: flex-end;
       position: relative;
       &:hover {
         .item {
           .contents {
-            pointer-events: all;
+            pointer-events: auto;
             height: 300px;
             visibility: visible;
           }
@@ -130,6 +70,7 @@ header {
       }
     }
     .sub-menu {
+      display: block;
       .login {
         font-size: 12px;
         color: $yellow;
@@ -155,6 +96,9 @@ header {
           color: #e4405f;
         }
       }
+      .trigger {
+        display: none;
+      }
     }
   }
 }
@@ -162,31 +106,34 @@ header {
 /* PROMOTION */
 .promotion {
   background-color: $black;
-  .swiper {
-    height: 560px;
-    .swiper-slide {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 100%;
-        pointer-events: none;
+  .inner {
+    .swiper {
+      width: 100%;
+      height: 560px;
+      .swiper-slide {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+          pointer-events: none;
+        }
       }
     }
-  }
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: $yellow;
-  }
-  .swiper-button-prev {
-    margin-left: 30px;
-  }
-  .swiper-button-next {
-    margin-right: 30px;
-  }
-  .swiper-pagination-bullet-active {
-    background-color: $yellow;
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: $yellow;
+    }
+    .swiper-button-prev {
+      margin-left: 30px;
+    }
+    .swiper-button-next {
+      margin-right: 30px;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $yellow;
+    }
   }
 }
 

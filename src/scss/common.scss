@@ -1,0 +1,58 @@
+$base-color: #171506;
+$black: #000;
+$white: #fff;
+$yellow: #fad000;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  color: $base-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: $base-color;
+  text-decoration: none;
+}
+
+.inner {
+  position: relative;
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.back-to-position {
+  opacity: 0;
+  transition: 1s;
+  &.to-right {
+    transform: translateX(-150px);
+  }
+  &.to-left {
+    transform: translateX(150px);
+  }
+  &.to-top {
+    transform: translateY(150px);
+  }
+  &.to-bottom {
+    transform: translateY(-150px);
+  }
+}
+
+.show {
+  .back-to-position {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
