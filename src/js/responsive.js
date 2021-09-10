@@ -2,7 +2,6 @@ const mediaQuery = window.matchMedia("screen and (max-width: 768px)");
 
 mediaQuery.addListener(function (e) {
   if (e.matches) {
-    console.log("sds");
     // TIRGGER
     const triggerEl = document.querySelector("header .trigger");
     const mainMenuEl = document.querySelector("header .main-menu");

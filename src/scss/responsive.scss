@@ -3,6 +3,7 @@
 @media screen and (max-width: 768px) {
   * {
     box-sizing: border-box;
+    word-break: keep-all;
   }
 
   .inner {
@@ -120,6 +121,249 @@
             }
           }
         }
+      }
+    }
+  }
+
+  /* PROMOTION */
+  .promotion {
+    .inner {
+      .swiper {
+        height: auto;
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: none;
+      }
+    }
+  }
+
+  /* SELECT MENU */
+  .select-menu {
+    padding: 40px 10px;
+    .inner {
+      justify-content: center;
+      .box {
+        img {
+          width: 200px;
+        }
+        &::after {
+          content: "";
+        }
+        &:hover {
+          img {
+            margin-top: 0;
+          }
+          &::after {
+            height: 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* LINE BANNER*/
+  .line-banner {
+    padding: 20px;
+    height: auto;
+    .inner {
+      width: 100%;
+      .banner-container {
+        flex-direction: column;
+        img {
+          width: 90%;
+          margin: 0 auto;
+          margin-bottom: 40px;
+        }
+        .text {
+          width: 100%;
+
+          p {
+            position: inherit;
+            font-size: 30px;
+            text-align: center;
+            top: 0;
+            left: 0;
+          }
+          h1 {
+            position: inherit;
+            font-size: 50px;
+            top: 0;
+            left: 0;
+            span {
+              padding: 10px;
+              font-size: 80px;
+            }
+            &::after {
+              content: "";
+              width: 50px;
+              height: 70px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* VIDEO */
+  .youtube {
+    height: 400px;
+    .area {
+      width: 100%;
+    }
+  }
+
+  /* SUCCESS POINT */
+  .success-point {
+    .sp-box {
+      .inner {
+        .badge {
+          position: static;
+          margin: 40px auto;
+          width: 110px;
+          height: 110px;
+          transform: translateX(0);
+          .box {
+            span {
+              font-size: 14px;
+            }
+            hr {
+              width: 80px;
+            }
+            h1 {
+              font-size: 36px;
+            }
+          }
+        }
+        .text-box {
+          text-align: center;
+          width: 400px;
+          position: static;
+          margin: 0 auto;
+          h1 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .sp1 {
+      img {
+        width: 300px;
+        margin-left: -150px;
+      }
+    }
+    .sp2 {
+      img {
+        width: 240px;
+        top: auto;
+        bottom: 0;
+        right: 50%;
+        margin-right: -120px;
+      }
+      .text-box {
+        h1 {
+          &::after {
+            content: "";
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          &:hover {
+            &::after {
+              content: "";
+              width: 40%;
+            }
+          }
+        }
+      }
+      .img-description {
+        right: 50%;
+        transform: translateX(50%);
+        h2 {
+          width: 300px;
+          padding: 10px;
+          font-size: 20px;
+        }
+      }
+    }
+    .sp3 {
+      .text-box {
+        h1 {
+          &::after {
+            content: "";
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          &:hover {
+            &::after {
+              content: "";
+              width: 50%;
+            }
+          }
+        }
+      }
+      img {
+        width: 240px;
+        right: 50%;
+        margin-right: -120px;
+      }
+    }
+    .sp4 {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  /* INTERIOR */
+  .interior {
+    .inner {
+      .box {
+        width: 400px;
+        height: 200px;
+        margin-top: 100px;
+        .text {
+          margin-top: -120px;
+          height: 120px;
+          width: 400px;
+          padding: 10px;
+          &:hover {
+            margin-top: -120px;
+            margin-left: 0;
+          }
+          h1 {
+            padding-top: 0;
+            font-size: 30px;
+            font-weight: 700;
+          }
+          p {
+            font-size: 12px;
+            padding: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  /* FOOTER */
+  footer {
+    .inner {
+      font-size: 12px;
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  // NOTICE MODAL
+  .notice {
+    padding: 0 30px;
+    .modal {
+      p {
+        margin: 33px 0;
       }
     }
   }
