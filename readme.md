@@ -32,7 +32,7 @@
 
 ---
 
-### Sidle
+### Slider
 
 <img src="./Images/markdown/slide-Animation.gif" alt="요소 슬라이더 gif">
 
@@ -69,7 +69,7 @@ if (!countUp.error) {
 ### Youtube iframe Api
 
 [IFrame Player API
-](https://developers.google.com/youtube/iframe_api_reference?hl=ko) 를 통해 JavaScript를 사용하여 영상을 제어할 수 있다. 이를 사용하여 메가 커피 유튜브 영상을 배경으로 사용하였다.
+](https://developers.google.com/youtube/iframe_api_reference?hl=ko) 를 통해 JavaScript를 사용하여 영상을 제어할 수 있다. 이를 사용하여 메가 커피 유튜브 영상을 배경으로 사용.
 
 <img src="./Images/markdown/youtube-Animation.gif" alt="카운트 애니메이션">
 
@@ -138,3 +138,7 @@ div 요소의 `scroll-spy` 클래스를 모두 찾아 배열에 담음. </br>
 CSS3 Media Query를 이용한 반응형 웹 만들기</br>
 `@media screen and (max-width: 768px)` 와
 `@media screen and (max-width: 370px)`에 따른 반응형 스타일 시트 제작
+
+### 리팩토링 예정
+
+- swiper.js, countup.js 라이브러리 대신 직접 구현해보기
