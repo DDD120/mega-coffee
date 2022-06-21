@@ -138,7 +138,3 @@ div 요소의 `scroll-spy` 클래스를 모두 찾아 배열에 담음. </br>
 CSS3 Media Query를 이용한 반응형 웹 만들기</br>
 `@media screen and (max-width: 768px)` 와
 `@media screen and (max-width: 370px)`에 따른 반응형 스타일 시트 제작
-
-### 리팩토링 예정
-
-- swiper.js, countup.js 라이브러리 대신 직접 구현해보기
