@@ -10,7 +10,8 @@
 
 ### Drap Down Menu
 
-<img src="./Images/markdown/nav-Animation.gif" alt="드롭다운 메뉴 gif">
+![nav-Animation](https://user-images.githubusercontent.com/74492479/174832208-371683c9-fe5e-4f0e-a026-8549ab538500.gif)
+
 
 ```html
 <ul class="main-menu">
@@ -34,7 +35,7 @@
 
 ### Slider
 
-<img src="./Images/markdown/slide-Animation.gif" alt="요소 슬라이더 gif">
+![slide-Animation](https://user-images.githubusercontent.com/74492479/174832348-0974b6e3-a103-480e-8ba7-cc90cfac282f.gif)
 
 **[swiper.js](https://swiperjs.com/)** 라이브러리 사용
 
@@ -42,7 +43,7 @@
 
 ### Count Up Animation
 
-<img src="./Images/markdown/countUp-Animation.gif" alt="카운트 애니메이션">
+![countUp-Animation](https://user-images.githubusercontent.com/74492479/174832433-ab0881c8-1016-41d6-9a1d-541db23879ac.gif)
 
 **_[countup.js](https://inorganik.github.io/countUp.js/)_** 라이브러리 사용
 
@@ -71,7 +72,7 @@ if (!countUp.error) {
 [IFrame Player API
 ](https://developers.google.com/youtube/iframe_api_reference?hl=ko) 를 통해 JavaScript를 사용하여 영상을 제어할 수 있다. 이를 사용하여 메가 커피 유튜브 영상을 배경으로 사용.
 
-<img src="./Images/markdown/youtube-Animation.gif" alt="카운트 애니메이션">
+![youtube-Animation](https://user-images.githubusercontent.com/74492479/174832488-9dbb017d-d2be-4617-a8ab-bdb4b2729667.gif)
 
 ```javascript
 function onYouTubeIframeAPIReady() {
@@ -97,7 +98,7 @@ function onYouTubeIframeAPIReady() {
 
 ### Scroll Animation
 
-<img src="./Images/markdown/scroll-Animation.gif" alt="스크롤 애니메이션">
+![scroll-Animation](https://user-images.githubusercontent.com/74492479/174832554-97ddcf19-92ff-44e0-9e75-7d79f3d8300f.gif)
 
 [ScrollMagic](https://scrollmagic.io/) 라이브러리 사용
 
@@ -121,7 +122,7 @@ div 요소의 `scroll-spy` 클래스를 모두 찾아 배열에 담음. </br>
 
 ### To Top
 
-<img src="./Images/markdown/toTop-Animation.gif" alt="상단 이동 애니메이션">
+![toTop-Animation](https://user-images.githubusercontent.com/74492479/174832620-63052d3b-f04b-4913-9275-0f4a41864f0b.gif)
 
 </br>
 
@@ -131,7 +132,7 @@ div 요소의 `scroll-spy` 클래스를 모두 찾아 배열에 담음. </br>
 
 ### Responsive Web
 
-<img src="./Images/markdown/responsive-Animation.gif" alt="반응형 애니메이션">
+![responsive-Animation](https://user-images.githubusercontent.com/74492479/174832669-868eb17c-e4d6-4ee6-a9d7-dc0fdfb9affd.gif)
 
 </br>
 
